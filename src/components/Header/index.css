@@ -1,0 +1,227 @@
+.header {
+  height: 80px;
+  background-color: #0f0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6% 0 5%;
+  position: relative;
+  z-index: 10;
+}
+
+.site-header {
+  background-color: #0f0f0f;
+}
+
+.overlay-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: transparent;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.website-logo {
+  width: 300px;
+  display: block;
+  max-width: 72vw;
+  margin-top: 8px;
+}
+
+.desktop-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.active-link {
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.search-header-button {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.close-menu-button {
+  display: none;
+}
+
+.header-search-form {
+  display: flex;
+  width: 260px;
+  height: 34px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.header-search-form input {
+  min-width: 0;
+  flex: 1;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: white;
+  font-size: 13px;
+}
+
+.header-search-form button {
+  width: 36px;
+  padding: 0;
+  border: none;
+  border-left: 1px solid #555;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-image {
+  width: 35px;
+  height: 35px;
+}
+
+.mobile-menu-button,
+.mobile-nav-close,
+.mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .site-header {
+    padding: 16px 20px 0;
+    background-color: #111111;
+  }
+
+  .header {
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .header-left {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .header-right {
+    gap: 18px;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .overlay-header {
+    background-color: transparent;
+  }
+
+  .website-logo {
+    width: 170px;
+    margin-top: 0;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .search-header-button {
+    display: flex;
+    font-size: 32px;
+    color: #f5f5f5;
+  }
+
+  .header-search-form {
+    width: 96px;
+    height: 22px;
+    display: none;
+  }
+
+  .header-search-form input {
+    padding: 0 6px;
+    font-size: 10px;
+  }
+
+  .header-search-form button {
+    width: 25px;
+    font-size: 12px;
+  }
+
+  .mobile-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .close-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #f3f3f3;
+    color: #111111;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .profile-image {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 18px 0 0;
+    background-color: transparent;
+    margin-top: 16px;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .mobile-nav-link {
+    color: #f3f3f3;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+  }
+
+  .mobile-nav-close {
+    display: none;
+  }
+}

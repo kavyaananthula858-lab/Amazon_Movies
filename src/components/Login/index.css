@@ -1,0 +1,109 @@
+.login-page {
+  min-height: 100vh;
+  position: relative;
+  background-color: #111111;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/login-background.svg');
+  background-size: cover;
+  background-position: center;
+  padding: 24px 48px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 304px;
+  padding-top: 139px;
+}
+
+.login-logo {
+  position: absolute;
+  top: 24px;
+  left: 48px;
+  width: 104px;
+}
+
+.login-heading {
+  margin: 0 0 31px;
+  color: white;
+  font-size: 31px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.input-container label {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.input-container input {
+  width: 100%;
+  height: 42px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333333;
+  color: white;
+  padding: 0 15px;
+  outline: none;
+}
+
+.login-button {
+  width: 100%;
+  height: 41px;
+  margin-top: 16px;
+  background-color: #ed0612;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.login-error {
+  color: #ff0000;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .login-container {
+    max-width: none;
+    padding-top: 139px;
+  }
+
+  .login-page {
+    padding: 24px 48px;
+  }
+
+  .login-logo {
+    top: 24px;
+    left: 48px;
+    width: 104px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .login-page {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .login-logo {
+    left: 32px;
+  }
+}

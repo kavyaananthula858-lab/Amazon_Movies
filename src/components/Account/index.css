@@ -1,0 +1,107 @@
+.account-page {
+  min-height: 100vh;
+  background-color: #111111;
+  color: white;
+}
+
+.account-content {
+  min-height: 620px;
+  padding: 52px 8%;
+}
+
+.account-content h1 {
+  margin: 0 0 26px;
+  font-size: 30px;
+}
+
+.account-card {
+  max-width: 620px;
+  padding: 26px 30px;
+  border: 1px solid #3b3b3b;
+  border-radius: 5px;
+  background-color: #242424;
+}
+
+.account-section h2 {
+  margin: 0 0 18px;
+  color: #d7d7d7;
+  font-size: 18px;
+}
+
+.account-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 11px 0;
+  border-bottom: 1px solid #3a3a3a;
+  color: #a6a6a6;
+  font-size: 14px;
+}
+
+.account-detail strong {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.plan-section {
+  margin-top: 30px;
+}
+
+.account-card button {
+  width: 100%;
+  margin-top: 32px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e50914;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+  .account-page {
+    width: min(100%, 308px);
+    margin: 0 auto;
+  }
+
+  .account-content {
+    min-height: 430px;
+    padding: 22px 28px 0;
+  }
+
+  .account-content h1 {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  .account-card {
+    padding: 20px;
+  }
+
+  .account-section h2 {
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+
+  .account-detail {
+    padding: 9px 0;
+    font-size: 11px;
+  }
+
+  .account-detail strong {
+    font-size: 11px;
+  }
+
+  .plan-section {
+    margin-top: 24px;
+  }
+
+  .account-card button {
+    margin-top: 24px;
+    padding: 10px;
+    font-size: 12px;
+  }
+}
